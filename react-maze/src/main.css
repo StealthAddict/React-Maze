@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+}
+
+.maze-body {
+  min-height: 100vh;
+  background-color: #0f0e0e;
+  box-shadow: inset 0 0 500px #000;
+  min-width: 100vw;
+  height: 100%;
+  align-items: center;
+}
+.maze-cell {
+  display: flex;
+  flex: 1; 
+  height: 4vh;
+  width: 2vw;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.maze-row {
+  display: flex;
+  flex: 1; 
+}
+
+.grid-frame {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.grid-cell {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+}
+
+.no-cursor {cursor: none;}
+.flashlight {
+  position: absolute;
+  width: 200vw;
+  height: 200vh;
+  background-image: radial-gradient(circle at center, transparent, #000 10%);
+}
